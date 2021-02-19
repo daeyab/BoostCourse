@@ -67,22 +67,18 @@ INSERT, UPDATE, DELETE, SELECT 등이 여기에 해당합니다.
 DDL (Data Definition Language): 데이터베이스의 스키마를 정의하거나 조작하기 위해 사용합니다.(정의어)
 
 Database 생성하기   
-    mysql –uroot  -p
-Database 생성하기   
-    mysql> create database DB이름;
+`mysql –uroot  -p`   
+Database 생성하기
+`mysql> create database DB이름;`
  
-Database 생성하기2
-Database 사용자 생성과 권한 주기
-Database를 생성했다면, 해당 데이터베이스를 사용하는 계정을 생성해야 합니다.
-또한, 해당 계정이 데이터베이스를 이용할 수 있는 권한을 줘야 합니다.
-아래와 같은 명령을 이용해서 사용자 생성과 권한을 줄 수 있습니다.
-db이름 뒤의 * 는 모든 권한을 의미한다.
-@’%’는 어떤 클라이언트에서든 접근 가능하다는 의미이고, @’localhost’는 해당 컴퓨터에서만 접근 가능하다는 의미입니다.
-flush privileges는 DBMS에게 적용을 하라는 의미입니다.
-해당 명령을 반드시 실행해줘야 합니다.
-grant all privileges on db이름.* to 계정이름@'%' identified by ＇암호’; -> 모든 권한을 주겠다
+아래와 같은 명령을 이용해서 사용자 생성과 권한을 줄 수 있습니다.   
+db이름 뒤의 * 는 모든 권한을 의미한다.   
+@’%’는 어떤 클라이언트에서든 접근 가능하다는 의미이고, @’localhost’는 해당 컴퓨터에서만 접근 가능하다는 의미입니다.   
+flush privileges는 DBMS에게 적용을 하라는 의미입니다.   
+해당 명령을 반드시 실행해줘야 합니다.   
+```grant all privileges on db이름.* to 계정이름@'%' identified by ＇암호’; -> 모든 권한을 주겠다
 grant all privileges on db이름.* to 계정이름@'localhost' identified by ＇암호’;
-flush privileges;
+flush privileges;```
 사용자 계정이름은 'connectuser', 암호는 'connect123!@#', 해당 사용자가 사용하는 데이터베이스는 'connectdb'로 계정을 생성하려면 다음과 같이 명령을 수행합니다.
 grant all privileges on connectdb.* to connectuser@'%' identified by 'connect123!@#';
 
