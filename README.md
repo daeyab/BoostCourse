@@ -1,8 +1,8 @@
-### BoostCourse
+# BoostCourse
 
 ##<b> 2021/02/19</b>
 
-#1장
+###1장
 
 데이터베이스
 
@@ -69,15 +69,10 @@ DML (Data Manipulation Language): 데이터를 조작하기 위해 사용합니�
 
 INSERT, UPDATE, DELETE, SELECT 등이 여기에 해당합니다.
 
-
 DDL (Data Definition Language): 데이터베이스의 스키마를 정의하거나 조작하기 위해 사용합니다.(정의어)
 
-CREATE, DROP, ALTER 등이 여기에 해당합니다.
-DCL (Data Control Language) : 데이터를 제어하는 언어입니다.
-권한을 관리하고, 테이터의 보안, 무결성 등을 정의합니다.
-GRANT, REVOKE 등이 여기에 해당합니다.
- 
 Database 생성하기
+
 콘솔에서 다음과 같이 명령을 실행합니다.
 MySQL 관리자 계정인 root로 데이터베이스 관리 시스템에 접속하겠다는 것입니다.
 mysql –uroot  -p
@@ -100,7 +95,7 @@ db이름 뒤의 * 는 모든 권한을 의미한다.
 @’%’는 어떤 클라이언트에서든 접근 가능하다는 의미이고, @’localhost’는 해당 컴퓨터에서만 접근 가능하다는 의미입니다.
 flush privileges는 DBMS에게 적용을 하라는 의미입니다.
 해당 명령을 반드시 실행해줘야 합니다.
-grant all privileges on db이름.* to 계정이름@'%' identified by ＇암호’;
+grant all privileges on db이름.* to 계정이름@'%' identified by ＇암호’; -> 모든 권한을 주겠다
 grant all privileges on db이름.* to 계정이름@'localhost' identified by ＇암호’;
 flush privileges;
 사용자 계정이름은 'connectuser', 암호는 'connect123!@#', 해당 사용자가 사용하는 데이터베이스는 'connectdb'로 계정을 생성하려면 다음과 같이 명령을 수행합니다.
@@ -145,25 +140,12 @@ mysql> SeLeCt vErSiOn(), current_DATE;
 쿼리를 이용해서 계산식의 결과도 구할 수 있다.
  함수 및 수식 사용 예제
 mysql> SELECT SIN(PI()/4), (4+1)*5;
-+-------------+---------+
-| SIN(PI()/4) | (4+1)*5 |
-+-------------+---------+
-|    0.707107 |      25 |
-+-------------+---------+
  
 여러 문장을 한 줄에 연속으로 붙여서 실행가능하다.
+
 각 문장에 semicolon(;)만 붙혀 주면 됩니다.
+
 mysql> SELECT VERSION(); SELECT NOW();
-+--------------+
-| VERSION()    |
-+--------------+
-| 3.22.20a-log |
-+--------------+
-+---------------------+
-| NOW()               |
-+---------------------+
-| 2004 00:15:33 |
-+---------------------+
 
 하나의 SQL은 여러 줄로 입력가능하다.
 MySQL은 문장의 끝을 라인으로 구분하는 것이 아니라 semicolon(;)으로 구분하기 때문에 여러 줄에 거쳐 문장을 쓰는 것도 가능합니다.
