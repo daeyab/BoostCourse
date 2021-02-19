@@ -41,3 +41,26 @@ Oracle, SQL Server, MySQL, DB2 등의 상용 또는 공개 DBMS가 있다.
 - 운영비가 비싸다
 - 백업 및 복구에 대한 관리가 복잡
 - 부분적 데이터베이스 손실이 전체 시스템을 정지
+
+2. Mac
+HomeBrew를 이용해서 MySQL을 설치했다면, 실행과 중지가 상당히 간편합니다.
+환경 변수 설정 등이 모두 자동으로 이뤄지기 때문입니다.
+
+MySQL 서버 실행하기
+mysql서버를 실행하려면 터미널을 실행해 주신 후 아래와 같이 명령을 실행해 주세요.
+ mysql.server start
+위의 명령을 내리면 아래와 같은 메시지가 실행됩니다.
+Starting MySQL
+. SUCCESS!
+ 
+MySQL을 데몬으로 실행하기
+운영체제의 백그라운드로 MySQL이 계속 실행되도록 하고 싶다면 HomeBrew가 제공하는 명령을 이용하면 됩니다.
+HomeBrew로 다음과 같이 mysql 데몬을 실행합니다.
+아래와 같이 명령을 수행하면 간단하게 mysql을 데몬형태로 실행할 수 있습니다.
+brew services start mysql
+ 서비스 재시작도 HomeBrew가 제공하는 명령을 이용하면 됩니다.
+아래와 같이 명령을 수행하세요.
+brew services restart mysql
+ 데몬으로 실행되고 있는 프로그램들이 궁금하다면 아래와 같이 명령을 실행하면 됩니다.
+brew services list
+이상으로 윈도우와 맥에서 MySQL서버를 실행하는 방법을 알아보았습니다.
