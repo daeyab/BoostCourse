@@ -1,18 +1,13 @@
 # BoostCourse
 
-##<b> 2021/02/19</b>
+## <b> 2021/02/19</b>
 
-###1장
+### 1장
 
-데이터베이스
+#### 데이터베이스
 
-영상 우측 하단에 자막 스크립트 ON 설정을 한 후 강의를 시청하시면 학습에 도움이 됩니다.
-데이터베이스와 데이터베이스 관리 시스템
-Q> 데이터베이스와 데이터베이스 관리 시스템을 어린이도 알 수 있을 정도로 설명해주세요.
-A> 도서관에 있는 책들이 데이터베이스라고 한다면, 도서관 사서분들이나 도서 정보를 찾아주는 컴퓨터를 DBMS라고 볼 수 있습니다.
-
-데이터베이스의 기본개념 (정의)
-데이터의 집합 (a Set of Data)
+데이터베이스의 기본개념   
+데이터의 집합 (a Set of Data)   
 여러 응용 시스템(프로그램)들의 통합된 정보들을 저장하여 운영할 수 있는 공용(share) 데이터의 집합
 효율적으로 저장, 검색, 갱신할 수 있도록 데이터 집합들끼리 연관시키고 조직화되어야 한다.
 
@@ -53,7 +48,7 @@ Oracle, SQL Server, MySQL, DB2 등의 상용 또는 공개 DBMS가 있다.
 - 부분적 데이터베이스 손실이 전체 시스템을 정지
 
 명령어 모음
-- MySQL 설치 : ₩brew install mysql₩
+- MySQL 설치 : brew install mysql
 - MySQL 서버 실행 : mysql.server start
 - MySQL을 데몬으로 실행 : brew services start mysql
 - 서비스 재시작도 : brew services restart mysql
@@ -72,12 +67,9 @@ INSERT, UPDATE, DELETE, SELECT 등이 여기에 해당합니다.
 DDL (Data Definition Language): 데이터베이스의 스키마를 정의하거나 조작하기 위해 사용합니다.(정의어)
 
 Database 생성하기   
-MySQL 관리자 계정인 root로 데이터베이스 관리 시스템에 접속   
     mysql –uroot  -p
 Database 생성하기   
     mysql> create database DB이름;
-우리는 다음과 같은 명령을 실행하여 DB이름을 “connectdb＂로 생성하도록 하겠습니다.
-mysql> create database connectdb;
  
 Database 생성하기2
 Database 사용자 생성과 권한 주기
