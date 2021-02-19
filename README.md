@@ -71,18 +71,11 @@ INSERT, UPDATE, DELETE, SELECT 등이 여기에 해당합니다.
 
 DDL (Data Definition Language): 데이터베이스의 스키마를 정의하거나 조작하기 위해 사용합니다.(정의어)
 
-Database 생성하기
-
-콘솔에서 다음과 같이 명령을 실행합니다.
-MySQL 관리자 계정인 root로 데이터베이스 관리 시스템에 접속하겠다는 것입니다.
-mysql –uroot  -p
-window 사용자는 설치 시에 입력했던 암호를 입력합니다.
-맥 사용자는 암호가 없으니 그냥 엔터를 입력하면 됩니다.
-MySQL DBMS에 접속하면 “mysql>” 프롬프트가 보입니다.
- 
-Database 생성하기
-관리자 계정으로 MySQL에 접속했다면, 다음과 같은 명령으로 데이터베이스를 생성합니다.
- mysql> create database DB이름;
+Database 생성하기   
+MySQL 관리자 계정인 root로 데이터베이스 관리 시스템에 접속   
+    mysql –uroot  -p
+Database 생성하기   
+    mysql> create database DB이름;
 우리는 다음과 같은 명령을 실행하여 DB이름을 “connectdb＂로 생성하도록 하겠습니다.
 mysql> create database connectdb;
  
