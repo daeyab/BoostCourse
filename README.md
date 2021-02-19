@@ -66,3 +66,7 @@ brew services restart mysql
  데몬으로 실행되고 있는 프로그램들이 궁금하다면 아래와 같이 명령을 실행하면 됩니다.
 brew services list
 이상으로 윈도우와 맥에서 MySQL서버를 실행하는 방법을 알아보았습니다.
+
+ 
+
+brew services list
