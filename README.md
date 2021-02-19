@@ -42,10 +42,6 @@ Oracle, SQL Server, MySQL, DB2 등의 상용 또는 공개 DBMS가 있다.
 - 백업 및 복구에 대한 관리가 복잡
 - 부분적 데이터베이스 손실이 전체 시스템을 정지
 
-2. Mac
-
-HomeBrew를 이용해서 MySQL을 설치했다면, 실행과 중지가 상당히 간편합니다.
-환경 변수 설정 등이 모두 자동으로 이뤄지기 때문입니다.
 
 - MySQL 설치 : brew install mysql
 - MySQL 서버 실행 : mysql.server start
