@@ -47,16 +47,9 @@ Oracle, SQL Server, MySQL, DB2 등의 상용 또는 공개 DBMS가 있다.
 HomeBrew를 이용해서 MySQL을 설치했다면, 실행과 중지가 상당히 간편합니다.
 환경 변수 설정 등이 모두 자동으로 이뤄지기 때문입니다.
 
--MySQL 설치
-brew install mysql
--mysql서버를 실행하려면 터미널을 실행해 주신 후 아래와 같이 명령을 실행해 주세요.
-mysql.server start
-
-- MySQL을 데몬으로 실행하기
-brew services start mysql
-- 서비스 재시작도 HomeBrew가 제공하는 명령을 이용하면 됩니다.
-brew services restart mysql
-- 데몬으로 실행되고 있는 프로그램들이 궁금하다면 아래와 같이 명령을 실행하면 됩니다.
-brew services list
-- mysql 종료 
-brew services stop mysql
+- MySQL 설치 : brew install mysql
+- MySQL 서버 실행 : mysql.server start
+- MySQL을 데몬으로 실행 : brew services start mysql
+- 서비스 재시작도 : brew services restart mysql
+- 데몬으로 실행되고 있는 프로그램 확인 : rew services list
+- mysql 종료 : brew services stop mysql
