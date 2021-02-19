@@ -54,8 +54,7 @@ mysql서버를 실행하려면 터미널을 실행해 주신 후 아래와 같�
  mysql.server start
 위의 명령을 내리면 아래와 같은 메시지가 실행됩니다.
 Starting MySQL
-. SUCCESS!
-
+.SUCCESS!
 MySQL을 데몬으로 실행하기
 운영체제의 백그라운드로 MySQL이 계속 실행되도록 하고 싶다면 HomeBrew가 제공하는 명령을 이용하면 됩니다.
 HomeBrew로 다음과 같이 mysql 데몬을 실행합니다.
